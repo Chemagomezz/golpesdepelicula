@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sobre mi</title>
+	<link rel="stylesheet" href="./src/estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="./src/logo.ico" type="image/x-icon">
+</head>
+<body>
+	<div id="header_fixed">
+		<div class="container_header">
+			<img src="src/logo.png" alt="Logo Golpes de Película">
+		</div>
+		<h2><a href="#">Entrevista Emilio Marquiegui</a></h2>
+	</div>
+	<header>
+		<div id="titulo">
+			<svg height="100" width="100">
+				<polygon points="50,15 61,35 85,35 66,50 72,72 50,60 28,72 34,50 15,35 39,35" style="fill:red;" />
+			</svg>
+			<div id="titulo_letras">
+				<span class="tit_a1">GOLPES</span>
+				<span class="tit_a2">de</span>
+				<span class="tit_a3">PELICULA</span>
+			</div>
+			<svg height="100" width="100">
+				<polygon points="50,15 61,35 85,35 66,50 72,72 50,60 28,72 34,50 15,35 39,35" style="fill:red;" />
+			</svg>
+		</div>
+		<nav id="menu">
+			<ul id="submenus">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="boxeoycine.html">Boxeo y Cine</a></li>
+				<li class="desplegable">Películas <span>▼</span>
+					<div>
+						<a href="peliculaspremiadas.html">Premiadas</a>
+						<a href="#">Destacadas</a>
+					</div>
+				</li>
+				<li class="desplegable">Entrevistas <span>▼</span>
+					<div>
+						<a href="entrevista_maravilla.html">Maravilla Martínez</a>
+						<a href="entrevista_marquiegui.html">Emilio Marquiegui</a>
+					</div>
+				</li>
+				<li><a href="sobre_mi.html">Sobre mi</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<div id="container">
+			<div id="title">
+				<!-- <h3 class="tipo">Periodista</h3> -->
+				<h1 class="titular">Chema Gómez</h1>
+				<h3 class="autor sobremi">Periodista</h3>
+				<!-- <img class="img_titular" src="./src/emilio_marquiegui.JPG" alt="Foto de Emilio Marquiegui"> -->
+			</div>
+			<div class="separador s_sobremi"></div>
+			<div id="sub_section">
+				<div id="text_container">
+					<p class="texto"> <img class="img_sobremi" src="./src/foto_chema.jpg" alt="Foto de portada"><strong>Chema Gómez</strong>, periodista deportivo apasionado por el mundo del deporte y la comunicación. Desde mi rol como <strong>redactor en <span style="color: red;font-weight: bolder;">MARCA</span></strong>, contribuyo con contenido preciso y de alta calidad que busca conectar e informar a una audiencia que comparte la misma <strong>pasión por el deporte</strong>.  Cuento con una sólida formación académica y práctica que me permite <strong>entender y comunicar la actualidad deportiva con rigor y creatividad</strong>.<br><br>
+					Mi carrera se consolidó en la <strong>Universidad Francisco de Vitoria</strong>, donde obtuve el grado en Periodismo con una <strong>especialización en Periodismo Deportivo</strong>, lo que me permitió profundizar en la cobertura y análisis del mundo deportivo. Posteriormente, decidí enriquecer mi trayectoria con el <strong>máster en Periodismo Deportivo de MARCA y ESUE</strong>, experiencia que me brindó las herramientas avanzadas para navegar con éxito en <strong>un entorno periodístico en constante evolución</strong> y ser parte activa de uno de los <strong>medios deportivos más influyentes de habla hispana</strong>.</p>
+					<p class="texto">Como profesional, me esfuerzo por ofrecer contenido que <strong>informe, inspire y promueva el diálogo entre la audiencia</strong>, siempre con el compromiso de brindar <strong>un periodismo deportivo honesto y apasionado</strong>.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div id="container_footer">
+			<div class="container_footer_info">
+				<img src="./src/foto_chema.jpg" alt="foto contacto Chema">
+				<div class="container_footer_autor">
+					<div class="footer_titulo">
+						<svg height="20" width="20">
+							<polygon points="10,3 12.2,7.1 17,7.6 13.5,10.9 14.4,15.6 10,13 5.6,15.6 6.5,10.9 3,7.6 7.8,7.1" style="fill:white;" />
+						</svg>
+						<h3>Golpes de Película</h3>
+						<svg height="20" width="20">
+							<polygon points="10,3 12.2,7.1 17,7.6 13.5,10.9 14.4,15.6 10,13 5.6,15.6 6.5,10.9 3,7.6 7.8,7.1" style="fill:white;" />
+						</svg>
+					</div>
+					<div class="separador s_footer"></div>
+					<p class="texto">José Manuel Gómez Aparicio</p>
+				</div>
+			</div>
+			<div class="contacto">
+				<a href="mailto:chemagomez99@gmail.com" class="sobre_mi">CONTACTO <span>⇀</span></a>
+			</div>
+		</div>
+	</footer>
+	<script>
+		// Obtener los elementos del DOM
+		const headerInicial = document.getElementById('menu');
+		const headerSticky = document.getElementById('header_fixed');
+	
+		// Función que se ejecutará al hacer scroll
+		window.onscroll = function() {
+		  // Detectar cuando el scroll sobrepase el header inicial
+		  if (window.pageYOffset > (headerInicial.offsetTop + headerInicial.offsetHeight)) {
+			headerSticky.classList.add("sticky-visible");  // Mostrar el header sticky
+		  } else {
+			headerSticky.classList.remove("sticky-visible");  // Ocultar el header sticky
+		  }
+		};
+	  </script>
+</body>
+</html>
