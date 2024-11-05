@@ -211,6 +211,8 @@ header {
 	-o-transition: .5s;
 }
 .desplegable:hover span{
+	padding-right: 5px;
+	padding-left: 0px;
 	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
